@@ -12,8 +12,8 @@ Forecast daily storage usage with an interactive Streamlit dashboard + LSTM mode
 
 ## Quickstart
 ```bash
-git clone https://github.com/your-username/storage-forecaster.git
-cd storage-forecaster
+git clone https://github.com/fbabaei/storage-usage-forecaster.git
+cd storage-usage-forecaster
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
