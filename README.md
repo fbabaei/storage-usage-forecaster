@@ -1,19 +1,34 @@
-# 📈 Storage Usage Forecaster (Mini BI + LSTM)
+# Storage Usage Forecaster
 
-Forecast daily storage usage with an interactive Streamlit dashboard + LSTM model.
+A Streamlit app that forecasts storage usage using LSTM models.
+Easily visualize trends and predict future storage needs with interactive charts.
+
+---
 
 ## Features
-- Synthetic dataset generator (or upload your CSV with `date, usage_gb`)
-- Train an LSTM with lookback window
-- Visualize historical & forecast usage
-- Evaluate RMSE/MAE on test horizon
-- Export forecast CSV
-- Deployable to Streamlit Cloud / Hugging Face Spaces
+- Upload CSV files with historical storage usage data
+- Generate future storage forecasts using LSTM
+- Interactive visualizations with Matplotlib and Plotly
+- Mini BI-style reporting of historical and predicted usage
 
-## Quickstart
+---
+
+## Requirements
+- Python 3.9+
+- Dependencies listed in `requirements.txt`:
+  - streamlit
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - plotly
+  - tensorflow
+
+---
+
+## Usage
+
+### Run locally:
 ```bash
-git clone https://github.com/fbabaei/storage-usage-forecaster.git
-cd storage-usage-forecaster
-python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
